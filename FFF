@@ -41,11 +41,11 @@ RequireI:Add("Selector", "https://raw.githubusercontent.com/pqmailer/BoL_Scripts
 RequireI:Check()
 
 if RequireI.downloadNeeded == true then return end
-local Q = {range = 790, rangeSqr = math.pow(790, 2), width = 125, delay = 0.6, speed = math.huge, LastCastTime = 0, IsReady = function() return myHero:CanUseSpell(_Q) == READY end}
+local Q = {range = 800, rangeSqr = math.pow(800, 2), width = 125, delay = 0.6, speed = math.huge, LastCastTime = 0, IsReady = function() return myHero:CanUseSpell(_Q) == READY end}
 local W = {range = 925, rangeSqr = math.pow(925, 2), width = 190, delay = 0.8, speed = math.huge, LastCastTime = 0, IsReady = function() return myHero:CanUseSpell(_W) == READY end, status = 0}
 local E = {range = 700, rangeSqr = math.pow(700, 2), width = 45 * 0.5, delay = 0.25, speed = 2500, LastCastTime = 0, IsReady = function() return myHero:CanUseSpell(_E) == READY end}
-local R = {range = 725, rangeSqr = math.pow(725, 2), delay = 0.25, IsReady = function() return myHero:CanUseSpell(_R) == READY end}
-local QE = {range = 1280, rangeSqr = math.pow(1280, 2), width = 60, delay = 0, speed = 1600}
+local R = {range = 675, rangeSqr = math.pow(675, 2), delay = 0.25, IsReady = function() return myHero:CanUseSpell(_R) == READY end}
+local QE = {range = 1292, rangeSqr = math.pow(1280, 2), width = 60, delay = 0, speed = 1600}
 
 local pets = {"annietibbers", "shacobox", "malzaharvoidling", "heimertyellow", "heimertblue", "yorickdecayedghoul"}
 
